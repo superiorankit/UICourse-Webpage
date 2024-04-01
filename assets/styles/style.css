@@ -1,0 +1,823 @@
+/* CSS for body background color */
+body {
+    background-color: #171717;
+    font-family: "Krub", sans-serif;
+}
+
+/* Global CSS for oswald font family */
+.oswaldFont {
+    font-family: "Oswald", sans-serif;
+}
+
+/* CSS to remove style of a and li Tag */
+a,
+li {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+/* CSS for hover effect on a tag */
+a:hover {
+    transform: scale(1.2);
+}
+
+/* Global CSS for width:fit-content */
+.widthFit {
+    width: fit-content;
+}
+
+/* Navbar CSS Starts */
+@keyframes topEffect {
+    from {
+        transform: translatey(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
+
+.nav {
+    opacity: 0;
+    animation: topEffect 0.7s normal 1s ease-in-out forwards;
+}
+
+.logoImg {
+    width: 16px;
+    height: 16px;
+}
+
+.logoBox>p {
+    font-size: 19px;
+    line-height: 0.8;
+}
+
+.navRight {
+    width: 72%;
+}
+
+.navItemsBox {
+    width: 86%;
+}
+
+.navItems {
+    width: 70%;
+}
+
+.navItemsBox button {
+    background-color: white !important;
+    color: black !important;
+    font-size: 0.93em;
+    padding: 3px 20px !important;
+    letter-spacing: 0;
+}
+
+.hamBurg {
+    cursor: pointer;
+    width: 45px;
+    height: 21px;
+}
+
+.hamBurg>div {
+    height: 3px;
+}
+
+/* Navbar CSS Ends */
+
+/* Beginner CSS Starts */
+@keyframes scale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+
+}
+
+.beginnerImg {
+    animation: scale 1s normal ease-in-out forwards;
+}
+
+@keyframes leftEffect {
+
+    from {
+        left: 0%;
+        opacity: 0;
+    }
+
+    to {
+        left: 3%;
+        opacity: 1;
+    }
+
+}
+
+.leftTop {
+    left: 0%;
+    opacity: 0;
+    top: 9%;
+    animation: leftEffect 0.7s normal 1s ease-in-out forwards;
+}
+
+.uiTxt {
+    font-size: 7.2em;
+}
+
+@keyframes bounce {
+
+    0% {
+        bottom: 400px;
+    }
+
+    14.3% {
+        bottom: 45px;
+    }
+
+    28.6% {
+        bottom: 150px;
+    }
+
+    42.9% {
+        bottom: 45px;
+    }
+
+    57.2% {
+        bottom: 100px
+    }
+
+    71.5% {
+        bottom: 45px;
+    }
+
+    85.8% {
+        bottom: 65px;
+    }
+
+    100% {
+        bottom: 45px;
+    }
+
+}
+
+.iDot {
+    width: 20px;
+    height: 20px;
+    background-color: #8b6dc9;
+    right: -34px;
+    bottom: 400px;
+    animation: bounce 1.5s normal 1.4s ease-in-out forwards;
+}
+
+.begTxt {
+    writing-mode: tb-rl;
+    font-size: 2.3em;
+    letter-spacing: 4px;
+    transform: rotate(180deg);
+}
+
+.proTxt {
+    position: absolute;
+    left: 138px;
+    bottom: 58px;
+    display: flex;
+    width: 131px;
+}
+
+.proTxt>.smallBox {
+    margin-top: 5px;
+
+}
+
+.proTxt>p {
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+
+@keyframes rightEffect {
+
+    from {
+        right: -3%;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+
+}
+
+.rightTop {
+    right: 0;
+    opacity: 0;
+    top: 17%;
+    padding-right: 7%;
+    animation: rightEffect 0.7s normal 1s ease-in-out forwards;
+}
+
+.topEditTxt {
+    letter-spacing: 2px;
+    position: absolute;
+    border: 2px solid white;
+    border-right: none;
+    padding: 19px 28px;
+    padding-right: 52px;
+    line-height: 1.2;
+}
+
+.topEditTxt span {
+    font-size: 1.6em;
+    -webkit-text-stroke: 0.3px;
+    letter-spacing: 5px;
+}
+
+.rightTop h6 {
+    width: 300px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 48%;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.rightTop button {
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 10px 19px !important;
+}
+
+.rightDesc {
+    width: 300px;
+    font-weight: bold;
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+
+button {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    background-color: #8b6dc9 !important;
+    color: white !important;
+    position: relative;
+
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 1px solid transparent;
+
+}
+
+@keyframes buttonEffect {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+
+}
+
+button:hover {
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
+
+button:hover::before {
+    border-color: white;
+    animation: buttonEffect 0.3s linear normal forwards;
+}
+
+/* Beginner CSS Ends */
+
+/* Number CSS Starts */
+.numbers {
+    padding: 5.5% 9%;
+    box-shadow: 0px 0px 33px 2px black;
+}
+
+.numberTxt {
+    font-size: 3em;
+}
+
+.numberBox>p {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+/* Number CSS Ends */
+
+/* Challenge CSS Starts */
+.challengeImgTxt {
+    width: 60%;
+}
+
+.challengeTxt {
+    font-size: 4.7em;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px;
+    top: 56%;
+}
+
+.challengeBott {
+    color: #252525;
+}
+
+/* Challenge CSS Ends */
+
+/* Find CSS Starts */
+.findTxtBox {
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+
+.findTxtBox span {
+    font-size: 3em;
+}
+
+.smallBox {
+    width: 11px;
+    height: 11px;
+}
+
+.editionBox p {
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.editionBox p span {
+    font-size: 1.6em;
+    letter-spacing: 5px;
+}
+
+.findTxtBox {
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+
+.findCard {
+    width: 255px;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.findCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.findCard:hover {
+    cursor: pointer;
+    color: #8b6dc9;
+    transform: scale(1.1);
+}
+
+.findCard:hover::before {
+    transform: scale(50);
+}
+
+.findCard button {
+    font-size: 0.8em;
+    padding: 11px 18px !important;
+    letter-spacing: 1px;
+}
+
+.numTxt {
+    color: #8b6dc9;
+}
+
+.cardDesc {
+    font-size: 13px;
+    width: 189px;
+    hyphens: auto;
+    line-height: 1.7;
+}
+
+.courseTxt {
+    letter-spacing: 2px;
+}
+
+.bar {
+    width: 54px;
+    height: 2px;
+    background-color: #8b6dc9;
+}
+
+.readBox h6 {
+    font-size: 14px;
+}
+
+/* Finds CSS Ends */
+
+/* About CSS Starts */
+.usTxt {
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.aboutDesc {
+    font-size: 0.8em;
+    width: 327px;
+    line-height: 1.8;
+    hyphens: auto;
+}
+
+.aboutTxt {
+    font-size: 3.2em;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px;
+}
+
+.aboutTxt span {
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.aboutDesc {
+    font-size: 0.8em;
+    width: 327px;
+    line-height: 1.8;
+}
+
+.aboutBullet p {
+    font-size: 0.65em;
+    -webkit-text-stroke: 0.3px;
+    letter-spacing: 0.7px;
+}
+
+.aboutBox button {
+    font-size: 0.77em;
+    padding: 14px 21px !important;
+    letter-spacing: 1px;
+}
+
+.exploreTxt {
+    width: 4%;
+    top: 15%;
+}
+
+.aboutBullet {
+    width: 461px;
+    height: 120px;
+}
+
+.bulletBox {
+    width: 7px;
+    height: 7px;
+}
+
+.readyTxtBox>h6 {
+    writing-mode: vertical-rl;
+    height: 115px;
+    transform: rotate(180deg);
+    font-size: 1.1em;
+}
+
+/* About CSS Ends */
+
+/* Video CSS Starts */
+.videoBox {
+    width: 77%;
+    transition: all 0.3s;
+}
+
+.videoBox:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Video CSS Ends */
+
+/* What CSS Starts */
+.whatDesc {
+    font-size: 2.5em;
+    line-height: 0.7;
+    letter-spacing: 1.5px;
+}
+
+.customerDescTxt {
+    font-size: 0.76em;
+    hyphens: auto;
+    word-spacing: 4px;
+}
+
+/* What CSS Ends */
+
+/* Subscribe CSS Starts */
+.subscribeBox {
+    background-image: url(../images/subscribeImg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 64%;
+}
+
+.subsBox {
+    width: 437px;
+}
+
+.subsText {
+    font-size: 2.6em;
+}
+
+.newsTxt {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    color: #8b6dc9;
+}
+
+.subsDesc {
+    font-size: 0.82em;
+    line-height: 2;
+}
+
+/* Subscribe CSS Ends */
+
+/* Footer CSS Starts */
+input {
+    outline: none;
+    border: 3px solid #8a6dc7;
+    font-size: 14px;
+    color: white;
+}
+
+input::placeholder {
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.formButt {
+    font-size: 0.78em;
+    letter-spacing: 1px;
+    padding: 18px 28px !important;
+}
+
+footer {
+    background-color: #8b6dc9;
+    padding: 10% 0;
+}
+
+.leftHead {
+    border-bottom: 2px solid white;
+    letter-spacing: 3px;
+}
+
+.footAbout>a {
+    font-size: 1.3em;
+}
+
+.rightFoot {
+    width: 30%;
+}
+
+.social {
+    width: 15px;
+}
+
+.socialBox p {
+    font-size: 1.3em;
+}
+
+/* Footer CSS ends */
+
+@media screen and (max-width: 854px) {
+
+    .nav {
+        padding: 7% 4% !important;
+        animation: none;
+        opacity: 1;
+    }
+
+    .navItems {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 10px 20px;
+        background: black;
+        z-index: 100;
+    }
+
+    nav button {
+        position: absolute;
+        top: 22px;
+        right: 4%;
+    }
+
+    .hamBurg {
+        display: none !important;
+    }
+
+    .beginner {
+        font-size: 0.5em !important;
+        height: 90vh !important;
+    }
+
+    .beginnerImg {
+        width: 45% !important;
+    }
+
+    .leftTop {
+        top: 0;
+    }
+
+    .rightTop {
+        padding: 0;
+        top: 24px;
+    }
+
+    .rightTop h6 {
+        text-align: center !important;
+    }
+
+    .rightDesc {
+        text-align: center !important;
+        padding: 0 20px;
+    }
+
+    .numbers {
+        justify-content: center !important;
+    }
+
+
+    .challenge {
+        font-size: 0.5em;
+    }
+
+    .challengeTop {
+        flex-direction: column;
+    }
+
+    .smallBox {
+        display: none;
+    }
+
+    .discoverTxt:nth-child(1) {
+        font-size: 14px;
+        writing-mode: horizontal-tb !important;
+        transform: rotate(0deg) !important;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .discoverTxt:nth-child(3) {
+        writing-mode: horizontal-tb !important;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+
+    .find {
+        font-size: 0.8em;
+    }
+
+    .findTxtBox {
+        font-size: 1em;
+    }
+
+    .findCard {
+        margin-bottom: 20px;
+    }
+
+    .aboutImg {
+        display: none;
+    }
+
+    .aboutBox {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .aboutTxtBox {
+        margin: 0 !important;
+        width: 100% !important;
+        text-align: justify;
+        padding: 0 !important;
+    }
+
+    .aboutTxtBox h1 {
+        text-align: center;
+
+    }
+
+    .aboutDesc {
+        width: 100% !important;
+    }
+
+    .aboutBullet {
+        width: 100%;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .aboutBullet>div {
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0 auto !important;
+        display: block !important;
+    }
+
+    .ovalSection {
+        display: none;
+    }
+
+    .videoSection {
+        flex-direction: column;
+    }
+
+    .readyTxtBox {
+        transform: rotate(90deg);
+    }
+
+    .videoBox {
+        width: 100%;
+    }
+
+    .customerCardBox {
+        padding: 0 !important;
+        justify-content: center !important;
+        gap: 28%;
+    }
+
+    .subsBox {
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 0.5em;
+        padding-bottom: 87px;
+    }
+
+    .leftfoot {
+        flex-direction: row;
+        width: 100% !important;
+    }
+
+    .leftHead {
+        font-size: 2em;
+    }
+
+    .rightFoot {
+        width: 100%;
+        margin-top: 29px;
+        align-items: center !important;
+    }
+
+    .footHead {
+        font-size: 2em;
+    }
+
+}
+
+@media screen and (max-width: 1140px) {
+
+    .beginner {
+        height: 100vh;
+    }
+
+    .aboutBox {
+        padding: 0 !important;
+    }
+
+    .findCard {
+        margin-bottom: 20px;
+    }
+
+    .ovalSection {
+        display: none;
+    }
+
+    .why .aboutImg {
+        width: 35% !important;
+    }
+}
